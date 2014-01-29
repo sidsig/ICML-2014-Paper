@@ -1,4 +1,4 @@
-This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2013.4.30)  28 JAN 2014 19:31
+This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2013.4.30)  29 JAN 2014 16:29
 entering extended mode
  %&-line parsing enabled.
 **icml2014.tex
@@ -328,6 +328,11 @@ Overfull \hbox (5.1225pt too wide) in paragraph at lines 74--74
 
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 74.
+
+Underfull \hbox (badness 1147) in paragraph at lines 75--76
+\OT1/ptm/m/n/10 Mu-sic Tran-scrip-tion (AMT). The MLMs are
+ []
+
 (./introduction.tex
 LaTeX Font Info:    Try loading font information for U+msa on input line 4.
  (/usr/share/texmf/tex/latex/amsfonts/umsa.fd
@@ -350,17 +355,20 @@ Underfull \hbox (badness 5832) in paragraph at lines 14--15
  []
 
 )
-Underfull \hbox (badness 2735) in paragraph at lines 34--81
+Underfull \hbox (badness 2735) in paragraph at lines 34--86
 \OT1/ptm/m/n/10 After per-form-ing 5-sample me-dian fil-ter-ing for note
  []
 
 (./prediction.tex
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 6.
- [2]) (./combination.tex) (./evaluation.tex)
-(./conclusions.tex)
+ [2]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-Package natbib Warning: Citation `langley00' undefined on input line 92.
+)
+(./combination.tex) (./evaluation.tex) (./conclusions.tex)
+
+Package natbib Warning: Citation `langley00' undefined on input line 97.
 
 (./icml2014.bbl [3])
 
@@ -372,7 +380,7 @@ Package natbib Warning: There were undefined citations.
 Here is how much of TeX's memory you used:
  4382 strings out of 256216
  57784 string characters out of 1917072
- 129820 words of memory out of 1500000
+ 130820 words of memory out of 1500000
  7538 multiletter control sequences out of 10000+200000
  17711 words of font info for 38 fonts, out of 1200000 for 2000
  645 hyphenation exceptions out of 8191
@@ -386,7 +394,7 @@ ts/type1/bluesky/cm/cmsy7.pfb></usr/share/texmf/fonts/type1/bluesky/ams/msbm10.
 pfb></usr/share/texmf/fonts/type1/urw/times/utmb8a.pfb></usr/share/texmf/fonts/
 type1/urw/times/utmr8a.pfb></usr/share/texmf/fonts/type1/urw/times/utmri8a.pfb>
 
-Output written on icml2014.pdf (4 pages, 118980 bytes).
+Output written on icml2014.pdf (4 pages, 119564 bytes).
 PDF statistics:
  182 PDF objects out of 1000 (max. 8388607)
  46 named destinations out of 1000 (max. 131072)

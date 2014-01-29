@@ -75,6 +75,9 @@
 Automatic Music Transcription (AMT) involves automatically generating a symbolic transcription of a music signal. The transcription can be thought of as the digitized version of the musical score corresponding to the music signal. It has been observed in previous research that a Music Language Model (MLM) which captures general structural properties of music (in the symbolic form), when used together with an AMT system, can benefit the overall quality of the transcription. In this paper, we present a novel method for making this combination using Dirichlet priors. \textit{NOTE: summary of technical details could go here}. By combining the predictions of a recently proposed RNN-RBM based polyphonic MLM with the transcriptions of a state-of-the-art PLCA based AMT system, we demonstrate improved transcription accuracy on the Bach-10 dataset.
 \end{abstract} 
 
+%Alternative abstract
+%In this paper we investigate using Music Language Models (MLMs) to improve Automatic Music Transcription (AMT). The MLMs are trained on sequences of symbolic polyphonic music. We train RNN-based models as they are capable of capturing complex temporal structure present in the symbolic music data. Similar to the function of language models in ASRs, we use the MLMs to generate a prior probability for the occurrence of a sequence. We incorporate the priors into the transcription framework using Dirichlet priors. We test our hybrid models on the BACH-10 dataset and report a 2.5\% improvement in accuracy which is a significant result. 
+
 
 
 \input{introduction.tex}
