@@ -1,0 +1,42 @@
+\section{Polyphonic Music Prediction System} 
+\label{sec:prediction}
+
+It was demonstrated in \cite{Boulanger-Lewandowski2012} how a music language model (MLM) can be used to improve the transcription performance of a purely acoustic model. The MLM employed there was based on the recurrent neural network-restricted Boltzmann machine (RNN-RBM). A related model --- the recurrent neural network-neural autoregressive distribution estimator (RNN-NADE) was also used for the same purpose with comparable results. In the present work, we employ both the standard RNN, and the RNN-NADE as MLMs for boosting the transcription accuracy of the PLCA based model described in the previous section. In this section, we briefly describe the RNN-NADE which we used in our work as the MLM, and the necessary background for understanding this model.
+
+	\subsection{Recurrent Neural Network}
+	\label{subsec:rnn}
+	A recurrent neural network (RNN) is a powerful model for time-series data which is known to account for long-term temporal dependencies when trained effectively. Given a sequence of inputs $v_1, v_2, \ldots, v_T$ each in $\mathbb{R}^n$, the network computes a sequence of hidden states $\hat{h}_1, \hat{h}_2, \ldots, \hat{h}_T$ each in $\mathbb{R}^m$, and a sequence of predictions $\hat{y}_1, \hat{y}_2, \ldots, \hat{y}_T$ each in $\mathbb{R}^k$ by iterating the equations
+	\begin{eqnarray}
+		h_t & = & e(W_{\hat{h}x} v_t + W_{\hat{h}\hat{h}} \hat{h}_{t-1} + b_{\hat{h}}) \\
+		\hat{y}_t & = & g(W_{y\hat{h}})
+	\end{eqnarray}
+	
+	where $W_{y\hat{h}}$, $W_{\hat{h}x}$, $W_{\hat{h}\hat{h}}$ are the weight matrices and $b_{\hat{h}}$, $b_y$ are the biases and $e$ and $g$ are pre-defined vector valued functions which are typically non-linear and applied element-wise. The RNN also has a special initial bias $b^{init}_{\hat{h}}$ which replaces the formally undefined expression $W_{\hat{h}\hat{h}} \hat{h}_0$ at time $t = 1$. 
+	
+	In theory, a recurrent neural network can be easily trained using the gradient-based Back-Propagation Through Time algorithm \cite{Werbos1990} using the exactly computable error gradients in the network. However, $1^{st}$ order gradient methods fail to correctly train RNNs in certain cases. This difficulty has been associated with what is known as the \textit{vanishing/exploding gradients} phenomenon \cite{Bengio1994}, where the errors exhibit exponential decay/growth as they are back-propagated through time. Several proposals have been made to overcome this difficulty while retaining the predictive power of the RNN \cite{Hochreiter1997, Jaeger2002, Martens2011}. % Optionally, if low on space, replace preceding paragraph with the following sentence and add it to the first paragraph of this RNN subsection: Owing to the difficulty in learning long-term temporal dependencies with the RNN with the gradient-based Back-Propagation Through Time algorithm \cite{Werbos1990}, various alternatives for training RNNs have been proposed over the years \cite{Hochreiter1997, Jaeger2002, Martens2011}.
+%
+%	\subsection{Restricted Boltzmann Machine}
+%	\label{subsec:rbm}
+%	A restricted Boltzmann Machine (RBM) is an energy-based model with a bipartite structure consisting of a \textit{visible} layer $v$ (with bias parameters $b_v$), a \textit{hidden} layer $h$ (with bias $b_h$) and a weight-matrix $W_{vh}$ between these two layers \cite{Smolensky1986, Hinton2002}. The joint probability of a given configuration of the visible layer $v$ and hidden layer $h$ is given by $p(v, h) = exp(-h^T W v - b_{v}^{T} v - b_{h}^{T} h) / Z$, where $Z$ is the partition function which is usually intractable. An RBM can be trained in an unsupervised manner using the Contrastive Divergence learning algorithm \cite{Hinton2002, Tieleman2008}. Inference in RBMs involves 	
+
+
+	\subsection{Neural Autoregressive Distribution Estimator}
+	\label{subsec:nade}
+	The neural autoregressive distribution estimator (NADE) \cite{Larochelle2011} is a graphical model inspired by the Restricted Boltzmann Machine \cite{Smolensky1986, Hinton2002}. It shares the structural properties of the RBM in that it has a visible layer $v$ (with biases $b_v$), a hidden layer $h$ (with biases $b_h$), with these two layers connected by a weight-matrix $W$. It facilitates the exact inference $p(v)$ given an input vector $v$, which is not possible in RBMs since there one has to compute the intractable \textit{partition function} \cite{Larochelle2011}. This wass made possible by thinking of the RBM as a \textit{fully visible sigmoid belief network} (FVSBN) \cite{Neal1992}. The FVSBN is a special case of a family of models known as fully visible Bayesian networks \cite{Frey1998} with the property
+	\begin{equation}
+		p(v) = \prod_{i=1}^D p(v_i|v_{parents(i)})
+	\end{equation}
+	where all observation variables $v_i$ are arranged into a directed acyclic graph and $v_{parents(i)}$ corresponds to all the variables in v that are parents of $v_i$. In an FVSBN, the acyclic graph is obtained by defining the parents of $v_i$ as all variables that are to its left, or $v_{parents(i)} = v_{<i}$ where $v_{<i}$ refers to the subvector containing all variables $v_j$ such that $j<i$. In the case of the NADE, $p(v_i|v_{parents(i)})$ can be computed as follows
+	\begin{eqnarray}
+ 		p(v_i=1|v_{parents(i)}) & = & \sigma(b_{v}^{(i)}) + (W^T)_{i,\cdot} h_i) \\
+		h_i & = & \sigma(b_h + W_{\cdot , <i} v_{<i})
+	\end{eqnarray}
+	
+	Untying the weights $W$ and $W^T$ results in a more powerful model. In the NADE, the cost of computing $p(v)$ is $O(HD)$, where $H$ is the number of hidden units and $D$ is the dimensionality of the vector $v$.
+	
+	\subsection{Recurrent Neural Network-Neural Autoregressive Distribution Estimator}
+	\label{subsec:rnn-nade}
+	Putting together the models described in Sections \ref{subsec:rnn} and \ref{subsec:nade}, we obtain the RNN-NADE, which is a model proposed for high-dimensional time-series.
+
+
+% Models for music prediction capture structure in musical data. Such models deal with music data in the symbolic form \cite{Orio2006}. Structure in music can be both sequential and parallel. For example, a melody can be thought to have purely sequential structure since . On the other hand, a polyphonic piece of music has parallel structure as well due to the added possibility of occurrence of simultaneous pitches at any given time instant.

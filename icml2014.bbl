@@ -1,0 +1,142 @@
+\begin{thebibliography}{22}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Benetos \& Dixon(2012)Benetos and Dixon]{Benetos2012}
+Benetos, Emmanouil and Dixon, Simon.
+\newblock A shift-invariant latent variable model for automatic music
+  transcription.
+\newblock \emph{Computer Music Journal}, 36\penalty0 (4):\penalty0 81--94,
+  2012.
+
+\bibitem[Benetos et~al.(2013)Benetos, Cherla, and Weyde]{Benetos2013}
+Benetos, Emmanouil, Cherla, Srikanth, and Weyde, Tillman.
+\newblock An effcient shiftinvariant model for polyphonic music transcription.
+\newblock In \emph{6th International Workshop on Machine Learning and Music},
+  2013.
+
+\bibitem[Bengio et~al.(1994)Bengio, Simard, and Frasconi]{Bengio1994}
+Bengio, Yoshua, Simard, Patrice, and Frasconi, Paolo.
+\newblock Learning long-term dependencies with gradient descent is difficult.
+\newblock \emph{Neural Networks, IEEE Transactions on}, 5\penalty0
+  (2):\penalty0 157--166, 1994.
+
+\bibitem[Boulanger-Lewandowski et~al.(2012)Boulanger-Lewandowski, Bengio, and
+  Vincent]{Boulanger-Lewandowski2012}
+Boulanger-Lewandowski, N., Bengio, Y., and Vincent, P.
+\newblock Modeling temporal dependencies in high-dimensional sequences:
+  Application to polyphonic music generation and transcription.
+\newblock In \emph{29th International Conference on Machine Learning},
+  Edinburgh, Scotland, UK, 2012.
+
+\bibitem[Dempster et~al.(1977)Dempster, Laird, and Rubin]{Dempster77}
+Dempster, A.~P., Laird, N.~M., and Rubin, D.~B.
+\newblock Maximum likelihood from incomplete data via the {EM} algorithm.
+\newblock \emph{Journal of the Royal Statistical Society}, 39\penalty0
+  (1):\penalty0 1--38, 1977.
+
+\bibitem[Ewert \& M{\"u}ller(2011)Ewert and M{\"u}ller]{Ewert2011}
+Ewert, Sebastian and M{\"u}ller, Meinard.
+\newblock Score-informed voice separation for piano recordings.
+\newblock In \emph{ISMIR}, pp.\  245--250, 2011.
+
+\bibitem[Ewert \& M{\"u}ller(2012)Ewert and M{\"u}ller]{Ewert2012}
+Ewert, Sebastian and M{\"u}ller, Meinard.
+\newblock Score-informed source separation for music signals.
+\newblock In \emph{Multimodal Music Processing}, pp.\  73--94, 2012.
+
+\bibitem[Frey(1998)]{Frey1998}
+Frey, Brendam~J.
+\newblock \emph{Graphical models for machine learning and digital
+  communication}.
+\newblock The MIT press, 1998.
+
+\bibitem[Hinton(2002)]{Hinton2002}
+Hinton, Geoffrey~E.
+\newblock Training products of experts by minimizing contrastive divergence.
+\newblock \emph{Neural computation}, 14\penalty0 (8):\penalty0 1771--1800,
+  2002.
+
+\bibitem[Hochreiter \& Schmidhuber(1997)Hochreiter and
+  Schmidhuber]{Hochreiter1997}
+Hochreiter, Sepp and Schmidhuber, J{\"u}rgen.
+\newblock Long short-term memory.
+\newblock \emph{Neural computation}, 9\penalty0 (8):\penalty0 1735--1780, 1997.
+
+\bibitem[Jaeger(2002)]{Jaeger2002}
+Jaeger, Herbert.
+\newblock Adaptive nonlinear system identification with echo state networks.
+\newblock In \emph{Advances in neural information processing systems}, pp.\
+  593--600, 2002.
+
+\bibitem[Larochelle \& Murray(2011)Larochelle and Murray]{Larochelle2011}
+Larochelle, Hugo and Murray, Iain.
+\newblock The neural autoregressive distribution estimator.
+\newblock \emph{Journal of Machine Learning Research}, 15:\penalty0 29--37,
+  2011.
+
+\bibitem[Li \& Seung(1999)Li and Seung]{Li1999}
+Li, D.~D. and Seung, H.~S.
+\newblock Learning the parts of objects by non-negative matrix factorization.
+\newblock \emph{Nature}, 401:\penalty0 788--791, October 1999.
+
+\bibitem[Martens \& Sutskever(2011)Martens and Sutskever]{Martens2011}
+Martens, James and Sutskever, Ilya.
+\newblock Learning recurrent neural networks with hessian-free optimization.
+\newblock In \emph{Proceedings of the 28th International Conference on Machine
+  Learning (ICML-11)}, pp.\  1033--1040, 2011.
+
+\bibitem[Neal(1992)]{Neal1992}
+Neal, Radford~M.
+\newblock Connectionist learning of belief networks.
+\newblock \emph{Artificial intelligence}, 56\penalty0 (1):\penalty0 71--113,
+  1992.
+
+\bibitem[Rabiner \& Juang(1993)Rabiner and Juang]{Rabiner1993}
+Rabiner, Lawrence and Juang, Biing-Hwang.
+\newblock Fundamentals of speech recognition.
+\newblock 1993.
+
+\bibitem[Sch{\"{o}}rkhuber \& Klapuri(2010)Sch{\"{o}}rkhuber and
+  Klapuri]{Schoerkhuber10}
+Sch{\"{o}}rkhuber, C. and Klapuri, A.
+\newblock Constant-{Q} transform toolbox for music processing.
+\newblock In \emph{7th Sound and Music Computing Conf.}, Barcelona, Spain, July
+  2010.
+
+\bibitem[Sent{\"u}rk et~al.(2013)Sent{\"u}rk, Gulati, and Serra]{Senturk2013}
+Sent{\"u}rk, Sertan, Gulati, Sankalp, and Serra, Xavier.
+\newblock Score informed tonic identification for makam music of turkey.
+\newblock In \emph{14th Int. Soc. for Music Info. Retrieval Conf. Curitiba,
+  Brazil.(to appear)}, volume 195, pp.\  206, 2013.
+
+\bibitem[Shashanka et~al.(2008)Shashanka, Raj, and Smaragdis]{Shashanka2008}
+Shashanka, M., Raj, B., and Smaragdis, P.
+\newblock Probabilistic latent variable models as nonnegative factorizations.
+\newblock \emph{Computational Intelligence and Neuroscience}, 2008.
+\newblock {A}rticle ID 947438.
+
+\bibitem[Smaragdis \& Mysore(2009)Smaragdis and Mysore]{Smaragdis2009}
+Smaragdis, P. and Mysore, G.
+\newblock Separation by ``humming'': user-guided sound extraction from
+  monophonic mixtures.
+\newblock pp.\  69--72, October 2009.
+
+\bibitem[Smolensky(1986)]{Smolensky1986}
+Smolensky, Paul.
+\newblock Parallel distributed processing: explorations in the microstructure
+  of cognition, vol. 1.
+\newblock chapter Information processing in dynamical systems: foundations of
+  harmony theory, pp.\  194--281. MIT Press, Cambridge, MA, USA, 1986.
+\newblock ISBN 0-262-68053-X.
+
+\bibitem[Werbos(1990)]{Werbos1990}
+Werbos, Paul~J.
+\newblock Backpropagation through time: what it does and how to do it.
+\newblock \emph{Proceedings of the IEEE}, 78\penalty0 (10):\penalty0
+  1550--1560, 1990.
+
+\end{thebibliography}

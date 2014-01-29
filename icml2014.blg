@@ -1,0 +1,55 @@
+This is BibTeX, Version 0.99d (TeX Live 2012)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: icml2014.aux
+The style file: icml2014.bst
+Database file #1: bibliography.bib
+Warning--string name "waspaa09" is undefined
+--line 178 of file bibliography.bib
+Warning--string name "adrwaspaa09" is undefined
+--line 179 of file bibliography.bib
+Warning--I didn't find a database entry for "langley00"
+Warning--empty journal in Rabiner1993
+Warning--empty booktitle in Smaragdis2009
+Warning--empty booktitle in Smolensky1986
+You've used 22 entries,
+            2773 wiz_defined-function locations,
+            753 strings with 8539 characters,
+and the built_in function-call counts, 10198 in all, are:
+= -- 943
+> -- 450
+< -- 25
++ -- 154
+- -- 132
+* -- 746
+:= -- 1483
+add.period$ -- 69
+call.type$ -- 22
+change.case$ -- 109
+chr.to.int$ -- 22
+cite$ -- 47
+duplicate$ -- 533
+empty$ -- 928
+format.name$ -- 174
+if$ -- 2217
+int.to.chr$ -- 1
+int.to.str$ -- 1
+missing$ -- 23
+newline$ -- 120
+num.names$ -- 88
+pop$ -- 235
+preamble$ -- 1
+purify$ -- 88
+quote$ -- 0
+skip$ -- 404
+stack$ -- 0
+substring$ -- 449
+swap$ -- 90
+text.length$ -- 9
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 237
+warning$ -- 3
+while$ -- 102
+width$ -- 0
+write$ -- 293
+(There were 6 warnings)
