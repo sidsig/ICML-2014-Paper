@@ -1,1 +1,18 @@
 \section{Evaluation} \label{sec:evaluation}
+
+\subsection{Dataset}
+
+For testing the transcription system, we employ the Bach10 dataset \cite{Duan2010}, which is a freely available multi-track collection of multiple-instrument polyphonic music, suitable for multi-pitch detection experiments. It consists of ten recordings of J.S. Bach chorales, performed by violin, clarinet, saxophone, and bassoon. Pitch ground truth for each instrument is also provided. Due to the tonal and homogenous content of the dataset, it is suitable for testing the incorporation of music language models in a transcription system. For training the transcription system, pre-extracted and pre-shifted spectral templates are extracted for the instruments present in the dataset, using isolated note samples from the RWC database \cite{Goto2003}. 
+
+\subsection{Metrics}
+
+For evaluating the performance of the proposed system for multi-pitch detection, we employ the precision, recall, and F-measure metrics, which are commonly used in transcription evaluations \cite{MIREX}:
+\begin{equation}
+ \mathit{Pre} = \frac{N_{\mathit{tp}}}{N_{\mathit{sys}}},\ \
+\ \mathit{Rec} = \frac{N_{\mathit{tp}}}{N_{\mathit{ref}}},\
+\ \ \mathit{F} = \frac{2\cdot\mathit{Rec}\cdot\mathit{Pre}}{\mathit{Rec}+\mathit{Pre}}
+\label{eq:PRF}
+\end{equation}
+where $N_{\mathit{tp}}$ is the number of correctly detected pitches, $N_{\mathit{sys}}$ is the number of detected pitches, and $N_{\mathit{ref}}$ is the number of ground-truth pitches. As in the public evaluations on multi-pitch detection carried out through the MIREX framework \cite{MIREX}, a detected note is considered correct is if its pitch is the same as the ground truth pitch and its onset is within a 50ms tolerance interval of the ground-truth onset.
+
+\subsection{Results}
