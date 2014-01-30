@@ -1,9 +1,21 @@
-\begin{thebibliography}{22}
+\begin{thebibliography}{29}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
   \providecommand{\doi}[1]{doi: #1}\else
   \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[MIR()]{MIREX}
+Music {I}nformation {R}etrieval {E}valuation e{X}change ({MIREX}).
+\newblock \url{http://music-ir.org/mirexwiki/}.
+
+\bibitem[Benetos et~al.(2013{\natexlab{a}})Benetos, Dixon, Giannoulis,
+  Kirchhoff, and Klapuri]{Benetos2013b}
+Benetos, E., Dixon, S., Giannoulis, D., Kirchhoff, H., and Klapuri, A.
+\newblock Automatic music transcription: challenges and future directions.
+\newblock \emph{Journal of Intelligent Information Systems}, 41\penalty0
+  (3):\penalty0 407--434, December 2013{\natexlab{a}}.
+\newblock \doi{10.1007/s10844-013-0258-3}.
 
 \bibitem[Benetos \& Dixon(2012)Benetos and Dixon]{Benetos2012}
 Benetos, Emmanouil and Dixon, Simon.
@@ -12,17 +24,25 @@ Benetos, Emmanouil and Dixon, Simon.
 \newblock \emph{Computer Music Journal}, 36\penalty0 (4):\penalty0 81--94,
   2012.
 
-\bibitem[Benetos et~al.(2013)Benetos, Cherla, and Weyde]{Benetos2013}
+\bibitem[Benetos et~al.(2013{\natexlab{b}})Benetos, Cherla, and
+  Weyde]{Benetos2013}
 Benetos, Emmanouil, Cherla, Srikanth, and Weyde, Tillman.
 \newblock An effcient shiftinvariant model for polyphonic music transcription.
 \newblock In \emph{6th International Workshop on Machine Learning and Music},
-  2013.
+  2013{\natexlab{b}}.
 
 \bibitem[Bengio et~al.(1994)Bengio, Simard, and Frasconi]{Bengio1994}
 Bengio, Yoshua, Simard, Patrice, and Frasconi, Paolo.
 \newblock Learning long-term dependencies with gradient descent is difficult.
 \newblock \emph{Neural Networks, IEEE Transactions on}, 5\penalty0
   (2):\penalty0 157--166, 1994.
+
+\bibitem[Bertin et~al.(2010)Bertin, Badeau, and Vincent]{Bertin2009}
+Bertin, N., Badeau, R., and Vincent, E.
+\newblock Enforcing harmonicity and smoothness in bayesian non-negative matrix
+  factorization applied to polyphonic music transcription.
+\newblock \emph{IEEE Transactions on Audio, Speech, and Language Processing},
+  18\penalty0 (3):\penalty0 538--549, March 2010.
 
 \bibitem[Boulanger-Lewandowski et~al.(2012)Boulanger-Lewandowski, Bengio, and
   Vincent]{Boulanger-Lewandowski2012}
@@ -37,6 +57,13 @@ Dempster, A.~P., Laird, N.~M., and Rubin, D.~B.
 \newblock Maximum likelihood from incomplete data via the {EM} algorithm.
 \newblock \emph{Journal of the Royal Statistical Society}, 39\penalty0
   (1):\penalty0 1--38, 1977.
+
+\bibitem[Duan et~al.(2010)Duan, Pardo, and Zhang]{Duan2010}
+Duan, Z., Pardo, B., and Zhang, C.
+\newblock Multiple fundamental frequency estimation by modeling spectral peaks
+  and non-peak regions.
+\newblock \emph{IEEE Transactions on Audio, Speech, and Language Processing},
+  18\penalty0 (8):\penalty0 2121--2133, November 2010.
 
 \bibitem[Ewert \& M{\"u}ller(2011)Ewert and M{\"u}ller]{Ewert2011}
 Ewert, Sebastian and M{\"u}ller, Meinard.
@@ -53,6 +80,13 @@ Frey, Brendam~J.
 \newblock \emph{Graphical models for machine learning and digital
   communication}.
 \newblock The MIT press, 1998.
+
+\bibitem[Goto et~al.(2003)Goto, Hashiguchi, Nishimura, and Oka]{Goto2003}
+Goto, M., Hashiguchi, H., Nishimura, T., and Oka, R.
+\newblock {RWC} music database: music genre database and musical instrument
+  sound database.
+\newblock In \emph{International Conference on Music Information Retrieval},
+  Baltimore, USA, October 2003.
 
 \bibitem[Hinton(2002)]{Hinton2002}
 Hinton, Geoffrey~E.
@@ -89,6 +123,13 @@ Martens, James and Sutskever, Ilya.
 \newblock In \emph{Proceedings of the 28th International Conference on Machine
   Learning (ICML-11)}, pp.\  1033--1040, 2011.
 
+\bibitem[Nam et~al.(2011)Nam, , Ngiam, Lee, and Slaney]{Nam2011}
+Nam, J., , Ngiam, J., Lee, H., and Slaney, M.
+\newblock A classification-based polyphonic piano transcription approach using
+  learned feature representations.
+\newblock In \emph{12th International Society for Music Information Retrieval
+  Conference}, pp.\  175--180, Miami, Florida, USA, October 2011.
+
 \bibitem[Neal(1992)]{Neal1992}
 Neal, Radford~M.
 \newblock Connectionist learning of belief networks.
@@ -124,6 +165,12 @@ Smaragdis, P. and Mysore, G.
 \newblock Separation by ``humming'': user-guided sound extraction from
   monophonic mixtures.
 \newblock pp.\  69--72, October 2009.
+
+\bibitem[Smaragdis et~al.(2006)Smaragdis, Raj, and Shashanka]{Smaragdis2006}
+Smaragdis, P., Raj, B., and Shashanka, Ma.
+\newblock A probabilistic latent variable model for acoustic modeling.
+\newblock In \emph{Neural Information Processing Systems Workshop}, Whistler,
+  Canada, December 2006.
 
 \bibitem[Smolensky(1986)]{Smolensky1986}
 Smolensky, Paul.
