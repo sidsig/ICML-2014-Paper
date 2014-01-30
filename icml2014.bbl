@@ -1,4 +1,4 @@
-\begin{thebibliography}{32}
+\begin{thebibliography}{28}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -36,6 +36,12 @@ Bengio, Yoshua, Simard, Patrice, and Frasconi, Paolo.
 \newblock Learning long-term dependencies with gradient descent is difficult.
 \newblock \emph{Neural Networks, IEEE Transactions on}, 5\penalty0
   (2):\penalty0 157--166, 1994.
+
+\bibitem[Bengio et~al.(2012)Bengio, Boulanger-Lewandowski, and
+  Pascanu]{bengio2012advances}
+Bengio, Yoshua, Boulanger-Lewandowski, Nicolas, and Pascanu, Razvan.
+\newblock Advances in optimizing recurrent networks.
+\newblock 2012.
 
 \bibitem[Bertin et~al.(2010)Bertin, Badeau, and Vincent]{Bertin2009}
 Bertin, N., Badeau, R., and Vincent, E.
@@ -93,12 +99,6 @@ Ewert, Sebastian and M{\"u}ller, Meinard.
 \newblock Score-informed source separation for music signals.
 \newblock In \emph{Multimodal Music Processing}, pp.\  73--94, 2012.
 
-\bibitem[Frey(1998)]{Frey1998}
-Frey, Brendam~J.
-\newblock \emph{Graphical models for machine learning and digital
-  communication}.
-\newblock The MIT press, 1998.
-
 \bibitem[Goto et~al.(2003)Goto, Hashiguchi, Nishimura, and Oka]{Goto2003}
 Goto, M., Hashiguchi, H., Nishimura, T., and Oka, R.
 \newblock {RWC} music database: music genre database and musical instrument
@@ -106,25 +106,7 @@ Goto, M., Hashiguchi, H., Nishimura, T., and Oka, R.
 \newblock In \emph{International Conference on Music Information Retrieval},
   Baltimore, USA, October 2003.
 
-\bibitem[Hinton(2002)]{Hinton2002}
-Hinton, Geoffrey~E.
-\newblock Training products of experts by minimizing contrastive divergence.
-\newblock \emph{Neural computation}, 14\penalty0 (8):\penalty0 1771--1800,
-  2002.
-
-\bibitem[Hochreiter \& Schmidhuber(1997)Hochreiter and
-  Schmidhuber]{Hochreiter1997}
-Hochreiter, Sepp and Schmidhuber, J{\"u}rgen.
-\newblock Long short-term memory.
-\newblock \emph{Neural computation}, 9\penalty0 (8):\penalty0 1735--1780, 1997.
-
-\bibitem[Jaeger(2002)]{Jaeger2002}
-Jaeger, Herbert.
-\newblock Adaptive nonlinear system identification with echo state networks.
-\newblock In \emph{Advances in neural information processing systems}, pp.\
-  593--600, 2002.
-
-\bibitem[Larochelle \& Murray(2011)Larochelle and Murray]{Larochelle2011}
+\bibitem[Larochelle \& Murray(2011)Larochelle and Murray]{larochelle2011neural}
 Larochelle, Hugo and Murray, Iain.
 \newblock The neural autoregressive distribution estimator.
 \newblock \emph{Journal of Machine Learning Research}, 15:\penalty0 29--37,
@@ -147,12 +129,6 @@ Nam, J., , Ngiam, J., Lee, H., and Slaney, M.
   learned feature representations.
 \newblock In \emph{12th International Society for Music Information Retrieval
   Conference}, pp.\  175--180, Miami, Florida, USA, October 2011.
-
-\bibitem[Neal(1992)]{Neal1992}
-Neal, Radford~M.
-\newblock Connectionist learning of belief networks.
-\newblock \emph{Artificial intelligence}, 56\penalty0 (1):\penalty0 71--113,
-  1992.
 
 \bibitem[Rabiner \& Juang(1993)Rabiner and Juang]{Rabiner1993}
 Rabiner, Lawrence and Juang, Biing-Hwang.
@@ -190,13 +166,12 @@ Smaragdis, P., Raj, B., and Shashanka, Ma.
 \newblock In \emph{Neural Information Processing Systems Workshop}, Whistler,
   Canada, December 2006.
 
-\bibitem[Smolensky(1986)]{Smolensky1986}
-Smolensky, Paul.
-\newblock Parallel distributed processing: explorations in the microstructure
-  of cognition, vol. 1.
-\newblock chapter Information processing in dynamical systems: foundations of
-  harmony theory, pp.\  194--281. MIT Press, Cambridge, MA, USA, 1986.
-\newblock ISBN 0-262-68053-X.
+\bibitem[Sutskever et~al.(2008)Sutskever, Hinton, and
+  Taylor]{sutskever2008recurrent}
+Sutskever, Ilya, Hinton, Geoffrey~E, and Taylor, Graham~W.
+\newblock The recurrent temporal restricted boltzmann machine.
+\newblock In \emph{Advances in Neural Information Processing Systems}, pp.\
+  1601--1608, 2008.
 
 \bibitem[Werbos(1990)]{Werbos1990}
 Werbos, Paul~J.

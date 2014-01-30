@@ -9,48 +9,48 @@ Warning--string name "adrwaspaa09" is undefined
 Warning--I didn't find a database entry for "langley00"
 Warning--to sort, need author or key in MIREX
 Warning--empty year in MIREX
+Warning--empty journal in bengio2012advances
 Warning--empty journal in Rabiner1993
 Warning--empty booktitle in Smaragdis2009
-Warning--empty booktitle in Smolensky1986
-You've used 32 entries,
+You've used 28 entries,
             2773 wiz_defined-function locations,
-            816 strings with 10494 characters,
-and the built_in function-call counts, 15281 in all, are:
-= -- 1405
-> -- 736
-< -- 30
-+ -- 252
-- -- 219
-* -- 1177
-:= -- 2216
-add.period$ -- 99
-call.type$ -- 32
-change.case$ -- 167
-chr.to.int$ -- 31
-cite$ -- 70
-duplicate$ -- 775
-empty$ -- 1350
-format.name$ -- 272
-if$ -- 3310
+            777 strings with 9851 characters,
+and the built_in function-call counts, 13745 in all, are:
+= -- 1248
+> -- 725
+< -- 22
++ -- 245
+- -- 216
+* -- 1085
+:= -- 1994
+add.period$ -- 85
+call.type$ -- 28
+change.case$ -- 155
+chr.to.int$ -- 27
+cite$ -- 62
+duplicate$ -- 685
+empty$ -- 1177
+format.name$ -- 263
+if$ -- 2970
 int.to.chr$ -- 2
 int.to.str$ -- 1
-missing$ -- 31
-newline$ -- 170
-num.names$ -- 124
-pop$ -- 369
+missing$ -- 26
+newline$ -- 149
+num.names$ -- 108
+pop$ -- 342
 preamble$ -- 1
-purify$ -- 137
+purify$ -- 128
 quote$ -- 0
-skip$ -- 579
+skip$ -- 521
 stack$ -- 0
-substring$ -- 655
-swap$ -- 141
-text.length$ -- 12
+substring$ -- 539
+swap$ -- 129
+text.length$ -- 10
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 347
+type$ -- 308
 warning$ -- 5
-while$ -- 144
+while$ -- 123
 width$ -- 0
-write$ -- 422
+write$ -- 366
 (There were 8 warnings)
