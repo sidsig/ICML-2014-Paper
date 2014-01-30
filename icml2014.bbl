@@ -1,4 +1,4 @@
-\begin{thebibliography}{29}
+\begin{thebibliography}{32}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -44,6 +44,12 @@ Bertin, N., Badeau, R., and Vincent, E.
 \newblock \emph{IEEE Transactions on Audio, Speech, and Language Processing},
   18\penalty0 (3):\penalty0 538--549, March 2010.
 
+\bibitem[Bock \& Schedl(2012)Bock and Schedl]{Bock2012}
+Bock, S. and Schedl, M.
+\newblock Polyphonic piano note transcription with recurrent neural networks.
+\newblock In \emph{2012 IEEE International Conference on Acoustics, Speech and
+  Signal Processing (ICASSP)}, pp.\  121--124, March 2012.
+
 \bibitem[Boulanger-Lewandowski et~al.(2012)Boulanger-Lewandowski, Bengio, and
   Vincent]{Boulanger-Lewandowski2012}
 Boulanger-Lewandowski, N., Bengio, Y., and Vincent, P.
@@ -51,6 +57,18 @@ Boulanger-Lewandowski, N., Bengio, Y., and Vincent, P.
   Application to polyphonic music generation and transcription.
 \newblock In \emph{29th International Conference on Machine Learning},
   Edinburgh, Scotland, UK, 2012.
+
+\bibitem[Boulanger-Lewandowski et~al.(2013)Boulanger-Lewandowski, Bengio, and
+  Vincent]{Boulanger-Lewandowski2013}
+Boulanger-Lewandowski, N., Bengio, Y., and Vincent, P.
+\newblock High-dimensional sequence transduction.
+\newblock In \emph{2013 IEEE International Conference on Acoustics, Speech and
+  Signal Processing (ICASSP)}, pp.\  3178--3182, May 2013.
+
+\bibitem[Cemgil(2004)]{Cemgil2004a}
+Cemgil, A.~T.
+\newblock \emph{Bayesian Music Transcription}.
+\newblock PhD thesis, Radboud University of Nijmegen, 2004.
 
 \bibitem[Dempster et~al.(1977)Dempster, Laird, and Rubin]{Dempster77}
 Dempster, A.~P., Laird, N.~M., and Rubin, D.~B.

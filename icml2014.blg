@@ -12,45 +12,45 @@ Warning--empty year in MIREX
 Warning--empty journal in Rabiner1993
 Warning--empty booktitle in Smaragdis2009
 Warning--empty booktitle in Smolensky1986
-You've used 29 entries,
+You've used 32 entries,
             2773 wiz_defined-function locations,
-            798 strings with 9958 characters,
-and the built_in function-call counts, 13768 in all, are:
-= -- 1259
-> -- 675
-< -- 26
-+ -- 231
-- -- 201
-* -- 1073
-:= -- 2006
-add.period$ -- 90
-call.type$ -- 29
-change.case$ -- 153
-chr.to.int$ -- 28
-cite$ -- 64
-duplicate$ -- 692
-empty$ -- 1218
-format.name$ -- 249
-if$ -- 2972
+            816 strings with 10494 characters,
+and the built_in function-call counts, 15281 in all, are:
+= -- 1405
+> -- 736
+< -- 30
++ -- 252
+- -- 219
+* -- 1177
+:= -- 2216
+add.period$ -- 99
+call.type$ -- 32
+change.case$ -- 167
+chr.to.int$ -- 31
+cite$ -- 70
+duplicate$ -- 775
+empty$ -- 1350
+format.name$ -- 272
+if$ -- 3310
 int.to.chr$ -- 2
 int.to.str$ -- 1
-missing$ -- 29
-newline$ -- 155
-num.names$ -- 112
-pop$ -- 336
+missing$ -- 31
+newline$ -- 170
+num.names$ -- 124
+pop$ -- 369
 preamble$ -- 1
-purify$ -- 125
+purify$ -- 137
 quote$ -- 0
-skip$ -- 509
+skip$ -- 579
 stack$ -- 0
-substring$ -- 577
-swap$ -- 114
-text.length$ -- 10
+substring$ -- 655
+swap$ -- 141
+text.length$ -- 12
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 314
+type$ -- 347
 warning$ -- 5
-while$ -- 129
+while$ -- 144
 width$ -- 0
-write$ -- 383
+write$ -- 422
 (There were 8 warnings)
