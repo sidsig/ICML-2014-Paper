@@ -15,4 +15,14 @@ The recording is then re-transcribed, using as aditional information the prior c
 \begin{equation}
  P_{t}(p) = \frac{\sum_{\omega,f,s}P_{t}(p,f,s|\omega)V_{\omega,t}+\kappa\alpha(p|t)}{\sum_{p,\omega,f,s}P_{t}(p,f,s|\omega)V_{\omega,t}+\kappa\alpha(p|t)} \label{eq:modifiedMStepPitchActivation}
 \end{equation}
-where $\kappa$ is a weight parameter expressing how much the prior should be imposed (in \cite{Smaragdis2009} it decreases from 1 to 0 throughout the iterations). In a larger context, the transcription creates a symbolic prediction, which in turn improves the subsequent re-transcription of the music signal.
+where $\kappa$ is a weight parameter expressing how much the prior should be imposed; as in \cite{Smaragdis2009}, the weight decreases from 1 to 0 throughout the iterations. In a larger context, the transcription creates a symbolic prediction, which in turn improves the subsequent re-transcription of the music signal. An overview of the complete transcription-prediction system architecture can be seen in Fig. \ref{fig:system}.
+
+\begin{figure*}
+\begin{center}
+\resizebox{320pt}{!}{
+ \input{figures/FigSystem.tex}
+ }
+ \caption{Proposed system diagram.}
+ \end{center}
+ \label{fig:system}
+\end{figure*}
