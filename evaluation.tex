@@ -19,9 +19,9 @@ where $N_{\mathit{tp}}$ is the number of correctly detected pitches, $N_{\mathit
 
 Multi-pitch detection experiments are performed using the proposed system, with various configurations. A first configuration only considers the transcription system from Section \ref{sec:transcription}. A second configuration takes the output of the transcription system and gives it as input to the prediction system of Section \ref{sec:prediction}, where the final piano-roll is the output of the prediction step. A third configuration is the one presented in Section \ref{sec:combination}, where the recording is re-transcribed, having the prediction as a prior information for estimating the pitch activations. For the prediction system, experiments were made using both the RNN-NADE and the RNN.
 
-Results using the various system configurations are displayed in Table \ref{tab:results}.
+Results using the various system configurations are displayed in Table \ref{tab:results}. As an example of the proposed system's performance, the transcription output using the 3rd configuration is displayed for a recording from the Bacg10 dataset in Fig. \ref{fig:Transcription}, along with the ground truth for the same recording.
 
-For comparison with the method of \cite{Duan2010} (where the Bach10 dataset was first introduced), the proposed method using the frame-based accuracy metric reaches 71.4\%, whereas the method of \cite{Duan2010} reaches 69.7\% (with unknown polyphony). 
+For comparison with the method of \cite{Duan2010} (where the Bach10 dataset was first introduced), the proposed method using the frame-based accuracy metric which is defined in the same paper by Duan et al., reaches 74.3\% for the NADE-HF using the 3rd configuration, whereas the method of \cite{Duan2010} reaches 69.7\% (with unknown polyphony).
 
 \begin{table}[t]
  \begin{center}
@@ -35,12 +35,21 @@ For comparison with the method of \cite{Duan2010} (where the Bach10 dataset was 
   Configuration 2 - RNN & 62.29\% & 59.08\% & 65.98\% \\ \hline
   Configuration 3 - RNN & 63.85\% & 61.14\% & 66.90\% \\ \hline  
   Configuration 2 - NADE-HF & 62.20\% & 59.14\% & 65.68\% \\ \hline
-  Configuration 3 - NADE-HF & 65.16\% & 62.80\% & 67.78\% \\ \hline  
-  Configuration 2 - RNN-HF & \% & \% & \% \\ \hline
-  Configuration 3 - RNN-HF & \% & \% & \% \\ \hline    
+  Configuration 3 - NADE-HF & \textbf{65.16}\% & \textbf{62.80}\% & \textbf{67.78}\% \\ \hline  
+  Configuration 2 - RNN-HF & 62.44\% & 59.28\% & 66.07\% \\ \hline
+  Configuration 3 - RNN-HF & 62.87\% & 60.03\% & 66.11\% \\ \hline    
  \end{tabular}
  }
 \end{center}
  \caption{Transcription results using various system configurations.}
  \label{tab:results}
 \end{table}
+
+\begin{figure}
+ \resizebox{230pt}{!}{
+ \includegraphics{figures/FigTranscription.eps}
+ }
+ \caption{Transcription example for recording  ``Ach Lieben Christen'' from the Bach10 dataset. (a) The output of the transcription-predicton system using the 3rd configuration, with the NADE-HF. (b) The pitch ground truth of the recording.}
+ \label{fig:Transcription}
+\end{figure}
+
