@@ -1,5 +1,4 @@
-This is BibTeX, Version 0.99d (TeX Live 2012)
-Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+This is BibTeX, Version 0.99c (Web2C 7.5.6)
 The top-level auxiliary file: icml2014.aux
 The style file: icml2014.bst
 Database file #1: bibliography.bib
@@ -8,48 +7,50 @@ Warning--string name "waspaa09" is undefined
 Warning--string name "adrwaspaa09" is undefined
 --line 179 of file bibliography.bib
 Warning--I didn't find a database entry for "langley00"
+Warning--to sort, need author or key in MIREX
+Warning--empty year in MIREX
 Warning--empty journal in Rabiner1993
 Warning--empty booktitle in Smaragdis2009
 Warning--empty booktitle in Smolensky1986
-You've used 22 entries,
+You've used 29 entries,
             2773 wiz_defined-function locations,
-            753 strings with 8539 characters,
-and the built_in function-call counts, 10198 in all, are:
-= -- 943
-> -- 450
-< -- 25
-+ -- 154
-- -- 132
-* -- 746
-:= -- 1483
-add.period$ -- 69
-call.type$ -- 22
-change.case$ -- 109
-chr.to.int$ -- 22
-cite$ -- 47
-duplicate$ -- 533
-empty$ -- 928
-format.name$ -- 174
-if$ -- 2217
-int.to.chr$ -- 1
+            798 strings with 9958 characters,
+and the built_in function-call counts, 13768 in all, are:
+= -- 1259
+> -- 675
+< -- 26
++ -- 231
+- -- 201
+* -- 1073
+:= -- 2006
+add.period$ -- 90
+call.type$ -- 29
+change.case$ -- 153
+chr.to.int$ -- 28
+cite$ -- 64
+duplicate$ -- 692
+empty$ -- 1218
+format.name$ -- 249
+if$ -- 2972
+int.to.chr$ -- 2
 int.to.str$ -- 1
-missing$ -- 23
-newline$ -- 120
-num.names$ -- 88
-pop$ -- 235
+missing$ -- 29
+newline$ -- 155
+num.names$ -- 112
+pop$ -- 336
 preamble$ -- 1
-purify$ -- 88
+purify$ -- 125
 quote$ -- 0
-skip$ -- 404
+skip$ -- 509
 stack$ -- 0
-substring$ -- 449
-swap$ -- 90
-text.length$ -- 9
+substring$ -- 577
+swap$ -- 114
+text.length$ -- 10
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 237
-warning$ -- 3
-while$ -- 102
+type$ -- 314
+warning$ -- 5
+while$ -- 129
 width$ -- 0
-write$ -- 293
-(There were 6 warnings)
+write$ -- 383
+(There were 8 warnings)
