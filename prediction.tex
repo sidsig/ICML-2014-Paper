@@ -28,12 +28,12 @@ In this section we discuss the details of the music prediction system, the model
 
 
 	\subsection{Recurrent Neural Network-based models}
-	\label{subsec:nade}
+	\label{subsec:rnn-based}
 	One of the drawbacks of using RNNs to predict polyphonic symbolic music is that the outputs of the network, $\hat{y}_T$ at any time step $T$,  are conditionally independent given the sequence of input vectors $v_1, v_2, \ldots, v_T$. This is a severe constraint when used for modelling polyphonic music, where notes often appear in very correlated patterns within a frame. In order to overcome this limitation, models derived from RNNs have been proposed which model high-dimensional conditional distributions at every time step \cite{sutskever2008recurrent,Boulanger-Lewandowski2012}.
 
 	The first RNN-based model that tried to model high-dimensional distributions at every time-step was the Recurrent Temporal Restricted Boltzmann Machine (RTRBM) \cite{sutskever2008recurrent}. The RTRBM is a conditional RBM, where the RBM parameters at time  $t$ are a function of the visible and hidden hidden units till time $\tau < t$. The hidden states of the RTRBM are updated as if they belonged to a regular RNN. However a major constraint with the RTRBM was that the hidden states were responsible for conveying both temporal information and modelling the conditional distribution at each time-step. The RTRBM model was later extended to the more general RNN-RBM model \cite{Boulanger-Lewandowski2012}. In this model, there is a separate hidden state which conveys the temporal information. The hidden state of the RBM is then free to model only the distribution at that time step. It was found that the RNN-RBM performs better than the RTRBM at modelling high-dimensional conditional distributions \cite{Boulanger-Lewandowski2012}. 
 
-	For our prediction system, we make use of a variant of the RNN-RBM, called the RNN-NADE. The only difference being that the conditional distributions at each step are modelled by a Neural Autoregressive Distribution Estimator (NADE) \cite{larochelle2011neural} as opposed to an RBM. As discussed in the next section, to combine the predictions with the transcription system, we need individual pitch activation probabilities at each time-step. Obtaining these probabilities from an RBM is intractable as it requires summing over all possible hidden states. However the NADE is a tractable distribution estimator and we can easily obtain these probabilities from the NADE. The NADE models the probability of occurrence of a vector $v$ as: 
+	For our prediction system, we make use of a variant of the RNN-RBM, called the RNN-NADE. The only difference being that the conditional distributions at each step are modelled by a Neural Autoregressive Distribution Estimator (NADE) \cite{Larochelle2011} as opposed to an RBM. As discussed in the next section, to combine the predictions with the transcription system, we need individual pitch activation probabilities at each time-step. Obtaining these probabilities from an RBM is intractable as it requires summing over all possible hidden states. However the NADE is a tractable distribution estimator and we can easily obtain these probabilities from the NADE. The NADE models the probability of occurrence of a vector $v$ as: 
 	\begin{equation}
 		p(v) = \prod_{i=1}^D p(v_i|\mathbf{v_{<i}})
 	\end{equation}
@@ -54,8 +54,9 @@ In this section we discuss the details of the music prediction system, the model
 	
 	%Untying the weights $W$ and $W^T$ results in a more powerful model. In the NADE, the cost of computing $p(v)$ is $O(HD)$, where $H$ is the number of hidden units and $D$ is the dimensionality of the vector $v$.
 	
-	\subsection{}
-	\label{subsec:rnn-nade}
+	\subsection{Training}
+	\label{subsec:training}
+	We trained the RNN to predict the next frame of symbolic music given a sequence. We trained the RNN using both gradient descent and HF optimization. The models were trained on sequences of length 200. For the NADE we employed a similar strategy and trained it using both gradient descent and HF optimization. The models were trained separately on data from the Nottingham dataset and the JSB Chorales dataset. We validate our models, by computing prediction accuracies as described in the next section. 
 	
 
 
