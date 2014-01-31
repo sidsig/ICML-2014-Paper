@@ -6,6 +6,7 @@ Warning--string name "waspaa09" is undefined
 --line 178 of file bibliography.bib
 Warning--string name "adrwaspaa09" is undefined
 --line 179 of file bibliography.bib
+Warning--I didn't find a database entry for "Duan10"
 Warning--I didn't find a database entry for "langley00"
 Warning--to sort, need author or key in MIREX
 Warning--empty year in MIREX
@@ -14,7 +15,7 @@ Warning--empty journal in Rabiner1993
 Warning--empty booktitle in Smaragdis2009
 You've used 28 entries,
             2773 wiz_defined-function locations,
-            777 strings with 9851 characters,
+            780 strings with 9871 characters,
 and the built_in function-call counts, 13745 in all, are:
 = -- 1248
 > -- 725
@@ -53,4 +54,4 @@ warning$ -- 5
 while$ -- 123
 width$ -- 0
 write$ -- 366
-(There were 8 warnings)
+(There were 9 warnings)

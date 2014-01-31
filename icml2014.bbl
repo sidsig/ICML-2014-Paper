@@ -106,7 +106,7 @@ Goto, M., Hashiguchi, H., Nishimura, T., and Oka, R.
 \newblock In \emph{International Conference on Music Information Retrieval},
   Baltimore, USA, October 2003.
 
-\bibitem[Larochelle \& Murray(2011)Larochelle and Murray]{larochelle2011neural}
+\bibitem[Larochelle \& Murray(2011)Larochelle and Murray]{Larochelle2011}
 Larochelle, Hugo and Murray, Iain.
 \newblock The neural autoregressive distribution estimator.
 \newblock \emph{Journal of Machine Learning Research}, 15:\penalty0 29--37,
