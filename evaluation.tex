@@ -44,7 +44,7 @@ To validate the performance of the MLMs, we calculate the prediction precision o
 
 Multi-pitch detection experiments are performed using the proposed system, with various configurations. A first configuration only considers the transcription system from Section \ref{sec:transcription}. A second configuration takes the output of the transcription system and gives it as input to the prediction system of Section \ref{sec:prediction}, where the final piano-roll is the output of the prediction step. A third configuration is the one presented in Section \ref{sec:combination}, where the recording is re-transcribed, having the prediction as a prior information for estimating the pitch activations. For the prediction system, experiments were made using both the RNN-NADE and the RNN.
 
-Results using the various system configurations are displayed in Table \ref{tab:results}. It can be seen that the best performance is achieved by the 3rd configuration when using the NADE-HF model for prediction, which surpasses the acoustic-only transcription system by more than 3\%. In general, it can be seen that by using the prediction system as a post-processing step (2nd configuration) always leads to an improvement over the acoustic-only model (1st configuration). A similar trend can be observed when integrating the prediction information as a prior in the transcription system (configuration 3) compared to just using the prediction system as post-processing (configuration 2); an improvement is always reported. Another observation can be made when comparing the RNN-NADE with the RNN, with the former providing a clear improvement. As an example of the proposed system's performance, the transcription output using the 3rd configuration is displayed for a recording from the Bach10 dataset in Fig. \ref{fig:Transcription}, along with the ground truth for the same recording.
+Results using the various system configurations are displayed in Table \ref{tab:results}. It can be seen that the best performance is achieved by the 3rd configuration when using the NADE-HF model for prediction, which surpasses the acoustic-only transcription system by more than 3\%. In general, it can be seen that by using the prediction system as a post-processing step (2nd configuration) always leads to an improvement over the acoustic-only model (1st configuration). A similar trend can be observed when integrating the prediction information as a prior in the transcription system (configuration 3) compared to just using the prediction system as post-processing (configuration 2); an improvement is always reported. Another observation can be made when comparing the RNN-NADE with the RNN, with the former providing a clear improvement. As an example of the proposed system's performance, the spectrogram and raw output of the transcription-prediction system using the 3rd configuration is displayed for a recording from the Bach10 dataset in Fig. \ref{fig:Spectrogram}, whereas the post-processed transcription output along with the ground truth for the same recording is shown in Fig. \ref{fig:Transcription}.
 
 For comparison with the method of \cite{Duan2010} (where the Bach10 dataset was first introduced), the proposed method using the frame-based accuracy metric which is defined in the same paper by Duan et al., reaches 74.3\% for the NADE-HF using the 3rd configuration, whereas the method of \cite{Duan2010} reaches 69.7\% (with unknown polyphony).
 
@@ -70,11 +70,20 @@ For comparison with the method of \cite{Duan2010} (where the Bach10 dataset was 
  \label{tab:results}
 \end{table}
 
+
+\begin{figure}
+ \resizebox{230pt}{!}{
+ \includegraphics{figures/FigSpectrogram.eps}
+ }
+ \caption{(a) The spectrogram $V_{\omega,t}$ for recording ``Ach Lieben Christen'' from the Bach10 dataset. (b) The pitch activation $P(p,t)$ using the  transcription-predicton system using the 3rd configuration, with the NADE-HF.}
+ \label{fig:Spectrogram}
+\end{figure}
+
 \begin{figure}
  \resizebox{230pt}{!}{
  \includegraphics{figures/FigTranscription.eps}
  }
- \caption{Transcription example for recording  ``Ach Lieben Christen'' from the Bach10 dataset. (a) The output of the transcription-predicton system using the 3rd configuration, with the NADE-HF. (b) The pitch ground truth of the recording.}
+ \caption{Transcription example for recording ``Ach Lieben Christen'' from the Bach10 dataset. (a) The post-processed output of the transcription-predicton system using the 3rd configuration, with the NADE-HF. (b) The pitch ground truth of the recording.}
  \label{fig:Transcription}
 \end{figure}
 
