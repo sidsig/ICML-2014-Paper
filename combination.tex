@@ -11,7 +11,7 @@ As shown in \cite{Smaragdis2009}, PLCA-based models use multinomial distribution
 \end{equation}
 where $\alpha_{t}(p)$ essentially is a pitch activation probability which is filtered through a pitch indicator function computed from the symbolic prediction step (the denominator is simply for normalisation purposes).
 
-The recording is then re-transcribed, using as aditional information the prior computed from the transcription step. The modified update for the pitch activation which replaces (\ref{eq:MStepTranscription}) is given by:
+The recording is then re-transcribed, using as additional information the prior computed from the transcription step. The modified update for the pitch activation which replaces (\ref{eq:MStepTranscription}) is given by:
 \begin{equation}
  P_{t}(p) = \frac{\sum_{\omega,f,s}P_{t}(p,f,s|\omega)V_{\omega,t}+\kappa\alpha_{t}(p)}{\sum_{p,\omega,f,s}P_{t}(p,f,s|\omega)V_{\omega,t}+\kappa\alpha_{t}(p)} \label{eq:modifiedMStepPitchActivation}
 \end{equation}
