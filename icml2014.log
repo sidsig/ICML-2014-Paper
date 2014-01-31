@@ -1,4 +1,4 @@
-This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=latex 2013.4.30)  31 JAN 2014 01:22
+This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=latex 2013.4.30)  31 JAN 2014 12:31
 entering extended mode
  %&-line parsing enabled.
 **icml2014.tex
@@ -444,15 +444,17 @@ Underfull \hbox (badness 1014) in paragraph at lines 39--40
 [3]) (./combination.tex
 File: figures/FigSystem.eps Graphic file (type eps)
  <figures/FigSystem.eps>) (./evaluation.tex [4]
+Underfull \vbox (badness 1533) has occurred while \output is active []
+
+ [5]
 Underfull \hbox (badness 1571) in paragraph at lines 49--50
 \OT1/ptm/m/n/10 (where the Bach10 dataset was first in-tro-duced), the
  []
 
+File: figures/FigSpectrogram.eps Graphic file (type eps)
+<figures/FigSpectrogram.eps>
 File: figures/FigTranscription.eps Graphic file (type eps)
-<figures/FigTranscription.eps>) (./conclusions.tex
-Underfull \vbox (badness 1430) has occurred while \output is active []
-
- [5])
+ <figures/FigTranscription.eps>) (./conclusions.tex)
 
 Package natbib Warning: Citation `langley00' undefined on input line 97.
 
@@ -470,18 +472,24 @@ Underfull \hbox (badness 10000) in paragraph at lines 9--11
 \OT1/ptm/m/n/10 u-a-tion eX-change (MIREX).
  []
 
-[6])
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [6]
+[7])
 
 Package natbib Warning: There were undefined citations.
 
-[7] (./icml2014.aux) ) 
+[8
+
+] (./icml2014.aux) ) 
 Here is how much of TeX's memory you used:
- 5881 strings out of 256217
- 74829 string characters out of 1917095
- 171225 words of memory out of 1500000
- 9040 multiletter control sequences out of 10000+200000
+ 5884 strings out of 256217
+ 74890 string characters out of 1917095
+ 169475 words of memory out of 1500000
+ 9042 multiletter control sequences out of 10000+200000
  18146 words of font info for 57 fonts, out of 1200000 for 2000
  645 hyphenation exceptions out of 8191
- 30i,12n,45p,1167b,427s stack positions out of 5000i,500n,6000p,200000b,15000s
+ 30i,12n,45p,1281b,455s stack positions out of 5000i,500n,6000p,200000b,15000s
 
-Output written on icml2014.dvi (7 pages, 97604 bytes).
+Output written on icml2014.dvi (8 pages, 103260 bytes).

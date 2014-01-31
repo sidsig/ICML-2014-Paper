@@ -7,7 +7,7 @@ In this section, we describe the process for combining the acoustic model with t
 
 As shown in \cite{Smaragdis2009}, PLCA-based models use multinomial distributions; since the Dirichlet distribution is conjugate to the multinomial, a Dirichlet prior can be used to enforce structure on the pitch activation distribution $P_{t}(p)$. Following the procedure of \cite{Smaragdis2009}, we define the Dirichlet hyperparameter for the pitch activation as:
 \begin{equation}
- \alpha(p|t) = \frac{P(p|t)P_{\mathit{MLM}}(p,t)}{\sum_{p}P(p|t)P_{\mathit{MLM}}(p,t)}
+ \alpha_{t}(p) = \frac{P(p|t)P_{\mathit{MLM}}(p,t)}{\sum_{p}P(p|t)P_{\mathit{MLM}}(p,t)}
 \end{equation}
 where $\alpha(p|t)$ essentially is a pitch activation probability which is filtered through a pitch indicator function computed from the symbolic prediction step (the denominator is simply for normalisation purposes).
 
