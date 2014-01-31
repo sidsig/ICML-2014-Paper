@@ -1,4 +1,4 @@
-This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=latex 2013.4.30)  31 JAN 2014 12:58
+This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=latex 2013.4.30)  31 JAN 2014 14:29
 entering extended mode
  %&-line parsing enabled.
 **icml2014.tex
@@ -418,15 +418,20 @@ Underfull \hbox (badness 1325) in paragraph at lines 13--14
  []
 
 ) (./transcription.tex
+Underfull \hbox (badness 2564) in paragraph at lines 4--6
+\OT1/ptm/m/n/10 used for de-com-pos-ing spec-tro-grams ([],
+ []
+
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
-Underfull \hbox (badness 5832) in paragraph at lines 14--15
+Underfull \hbox (badness 5832) in paragraph at lines 15--16
 \OT1/ptm/m/n/10 can be it-er-a-tively es-ti-mated us-ing the expectation-
  []
 
 [2])
-Underfull \hbox (badness 2735) in paragraph at lines 34--86
+Underfull \hbox (badness 2735) in paragraph at lines 35--86
 \OT1/ptm/m/n/10 After per-form-ing 5-sample me-dian fil-ter-ing for note
  []
 
@@ -434,14 +439,15 @@ Underfull \hbox (badness 2735) in paragraph at lines 34--86
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 15.
 
-Underfull \vbox (badness 1057) has occurred while \output is active []
-
-
 Underfull \hbox (badness 1014) in paragraph at lines 39--40
 \OT1/ptm/m/n/10 dimensional se-quences is the Re-cur-rent Tem-po-ral Re-
  []
 
-[3]) (./combination.tex
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [3])
+(./combination.tex
 File: figures/FigSystem.eps Graphic file (type eps)
  <figures/FigSystem.eps>) (./evaluation.tex [4]
 Underfull \vbox (badness 1533) has occurred while \output is active []
@@ -454,7 +460,10 @@ Underfull \hbox (badness 1571) in paragraph at lines 49--50
 File: figures/FigSpectrogram.eps Graphic file (type eps)
 <figures/FigSpectrogram.eps>
 File: figures/FigTranscription.eps Graphic file (type eps)
- <figures/FigTranscription.eps>) (./conclusions.tex)
+ <figures/FigTranscription.eps>) (./conclusions.tex
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+)
 
 Package natbib Warning: Citation `langley00' undefined on input line 97.
 
@@ -482,14 +491,18 @@ Package natbib Warning: There were undefined citations.
 
 [8
 
-] (./icml2014.aux) ) 
+] (./icml2014.aux)
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ ) 
 Here is how much of TeX's memory you used:
  5884 strings out of 256217
  74890 string characters out of 1917095
- 169475 words of memory out of 1500000
+ 169467 words of memory out of 1500000
  9042 multiletter control sequences out of 10000+200000
  18146 words of font info for 57 fonts, out of 1200000 for 2000
  645 hyphenation exceptions out of 8191
  30i,12n,45p,1281b,455s stack positions out of 5000i,500n,6000p,200000b,15000s
 
-Output written on icml2014.dvi (8 pages, 103276 bytes).
+Output written on icml2014.dvi (8 pages, 103352 bytes).
