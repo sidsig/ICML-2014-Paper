@@ -21,7 +21,8 @@ where $N_{\mathit{tp}}$ is the number of correctly detected pitches, $N_{\mathit
 
 \subsection{Results}
 
-To validate the performance of the MLMs, we calculate the prediction precision on unseen sequences of music from the Nottingham dataset, where precision is defined in Eq. \ref{eq:PRF}. The Nottingham dataset contains 1200 folk melodies out of which we utilise 694 tracks for training, 173 tracks for validation and 170 for testing \footnote{http://www-etud.iro.umontreal.ca/~boulanni/icml2012}. For both the RNN and RNN-NADE models we sample 10 vectors from the conditional distribution at each time-step and calculate the expected precision against the ground truth. The reported precision is found by finding the mean over the predictions of every frame. Table \ref{tab:prediction} shows the results of the validation experiments. These results are of the same order as the prediction accuracies reported in \cite{Boulanger-Lewandowski2012}. We found that for both the models, HF optimization gave better precision than SGD. Training with HF was also easier as there were less hyper parameters to be tuned when compared to SGD where learning rate needs to be updated to make sure training is effective. 
+To validate the performance of the MLMs, we calculate the prediction precision on unseen sequences of music from the Nottingham dataset, where precision is defined in Eq. \ref{eq:PRF}. The Nottingham dataset contains 1200 folk melodies out of which we utilise 694 tracks for training, 173 tracks for validation and 170 for testing \footnote{http://www-etud.iro.umontreal.ca/~boulanni/icml2012}. For both the RNN and RNN-NADE models we sample 10 vectors from the conditional distribution at each time-step and calculate the expected precision against the ground truth. The reported precision is found by finding the mean over the predictions of every frame. Table \ref{tab:prediction} shows the results of the validation experiments. These results are of the same order as the prediction accuracies reported in \cite{Boulanger-Lewandowski2012}. We found that for both the models, HF optimization gave better precision than SGD. Training with HF was also easier as there were less hyper parameters to be tuned when compared 
+to SGD where learning rate needs to be updated to make sure training is effective. 
 
 \begin{table}[t]
  \begin{center}
@@ -44,9 +45,11 @@ To validate the performance of the MLMs, we calculate the prediction precision o
 
 Multi-pitch detection experiments are performed using the proposed system, with various configurations. A first configuration only considers the transcription system from Section \ref{sec:transcription}. A second configuration takes the output of the transcription system and gives it as input to the prediction system of Section \ref{sec:prediction}, where the final piano-roll is the output of the prediction step. A third configuration is the one presented in Section \ref{sec:combination}, where the recording is re-transcribed, having the prediction as a prior information for estimating the pitch activations. For the prediction system, experiments were made using both the RNN-NADE and the RNN.
 
-Results using the various system configurations are displayed in Table \ref{tab:results}. It can be seen that the best performance is achieved by the 3rd configuration when using the NADE-HF model for prediction, which surpasses the acoustic-only transcription system by more than 3\%. In general, it can be seen that by using the prediction system as a post-processing step (2nd configuration) always leads to an improvement over the acoustic-only model (1st configuration). A similar trend can be observed when integrating the prediction information as a prior in the transcription system (configuration 3) compared to just using the prediction system as post-processing (configuration 2); an improvement is always reported. Another observation can be made when comparing the RNN-NADE with the RNN, with the former providing a clear improvement. As an example of the proposed system's performance, the spectrogram and raw output of the transcription-prediction system using the 3rd configuration is displayed for a recording from the Bach10 dataset in Fig. \ref{fig:Spectrogram}, whereas the post-processed transcription output along with the ground truth for the same recording is shown in Fig. \ref{fig:Transcription}.
+Results using the various system configurations are displayed in Table \ref{tab:results}. It can be seen that the best performance is achieved by the 3rd configuration when using the NADE-HF model for prediction, which surpasses the acoustic-only transcription system by more than 3\%. In general, it can be seen that by using the prediction system as a post-processing step (2nd configuration) always leads to an improvement over the acoustic-only model (1st configuration). A similar trend can be observed when integrating the prediction information as a prior in the transcription system (configuration 3) compared to just using the prediction system as post-processing (configuration 2); an improvement is always reported. Another observation can be made when comparing the RNN-NADE with the RNN, with the former providing a clear improvement. 
 
-For comparison with the method of \cite{Duan2010} (where the Bach10 dataset was first introduced), the proposed method using the frame-based accuracy metric which is defined in the same paper by Duan et al., reaches 74.3\% for the NADE-HF using the 3rd configuration, whereas the method of \cite{Duan2010} reaches 69.7\% (with unknown polyphony).
+As an example of the proposed system's performance, the spectrogram and raw output of the transcription-prediction system using the 3rd configuration is displayed for a recording from the Bach10 dataset in Fig. \ref{fig:Spectrogram}, whereas the post-processed transcription output along with the ground truth for the same recording is shown in Fig. \ref{fig:Transcription}. It can be seen that the system detects correctly most of the time pitches and their respective durations, althougn there is also a large number of false alarms.
+
+For comparison with the method of \cite{Duan2010} (where the Bach10 dataset was first introduced), the proposed method using the frame-based accuracy metric which is defined in the same paper by Duan et al., reaches 74.3\% for the NADE-HF using the 3rd configuration, whereas the method of \cite{Duan2010} reaches 69.7\%.
 
 \begin{table}[t]
  \begin{center}
@@ -55,14 +58,14 @@ For comparison with the method of \cite{Duan2010} (where the Bach10 dataset was 
   \hline
   \textbf{Configuration} & $\mathit{F}$ & $\mathit{Pre}$ & $\mathit{Rec}$  \\ \hline 
   Configuration 1 & 62.02\%  & 58.51\% & 66.12\% \\ \hline
+  Configuration 2 - RNN & 62.29\% & 59.08\% & 65.98\% \\ \hline
+  Configuration 3 - RNN & 63.85\% & 61.14\% & 66.90\% \\ \hline
+  Configuration 2 - RNN-HF & 62.44\% & 59.28\% & 66.07\% \\ \hline
+  Configuration 3 - RNN-HF & 62.87\% & 60.03\% & 66.11\% \\ \hline      
   Configuration 2 - NADE & 62.62\% & 59.70\% & 65.92\% \\ \hline
   Configuration 3 - NADE & 64.08\% & 61.96\% & 66.44\% \\ \hline
-  Configuration 2 - RNN & 62.29\% & 59.08\% & 65.98\% \\ \hline
-  Configuration 3 - RNN & 63.85\% & 61.14\% & 66.90\% \\ \hline  
   Configuration 2 - NADE-HF & 62.20\% & 59.14\% & 65.68\% \\ \hline
   Configuration 3 - NADE-HF & \textbf{65.16}\% & \textbf{62.80}\% & \textbf{67.78}\% \\ \hline  
-  Configuration 2 - RNN-HF & 62.44\% & 59.28\% & 66.07\% \\ \hline
-  Configuration 3 - RNN-HF & 62.87\% & 60.03\% & 66.11\% \\ \hline    
  \end{tabular}
  }
 \end{center}
